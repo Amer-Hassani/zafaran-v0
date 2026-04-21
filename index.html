@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zafaran — Your Instagram, Your Store</title>
+  <meta name="description" content="Zafaran turns your Instagram seller page into a fully working online storefront in 4 minutes. AI imports your posts, enhances images, writes product descriptions, and manages orders." />
+  <meta name="keywords" content="Instagram store, social commerce, AI storefront, MENA e-commerce, online store from Instagram" />
+  <meta property="og:title" content="Zafaran — Your Instagram, Your Store" />
+  <meta property="og:description" content="Turn your Instagram page into a working storefront in 4 minutes — powered by AI." />
+  <meta property="og:image" content="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVIGATION
+  ============================ -->
+  <header class="nav-header" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <img src="logo.png" alt="Zafaran Logo" class="nav-logo-img" />
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#how-it-works" class="nav-link">How it works</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#stories" class="nav-link">Stories</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="btn-ghost" id="login-btn">Log in</a>
+        <a href="#cta-section" class="btn-primary" id="get-started-nav-btn">Get started free</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================
+       HERO SECTION
+  ============================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Now live — MENA's first AI commerce layer for Instagram</span>
+      </div>
+      <h1 class="hero-headline" id="hero-headline">
+        Your Instagram.<br />
+        Your store.<br />
+        <em>We handle the rest.</em>
+      </h1>
+      <p class="hero-sub" id="hero-subtext">
+        Zafaran turns your Instagram seller page into a fully working online storefront in <strong>4 minutes</strong>. No design. No code. No drama.
+      </p>
+
+      <!-- Instagram URL input -->
+      <div class="hero-input-wrap" id="hero-input-wrap">
+        <div class="hero-input-box">
+          <span class="input-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </span>
+          <input type="text" id="instagram-input" class="hero-input" placeholder="Paste your Instagram username or link" autocomplete="off" />
+          <button class="hero-cta-btn" id="hero-cta-btn">
+            <span>Create my store</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+        <p class="input-hint">Free to start · No credit card needed · Setup in 4 minutes</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">18,000+</span>
+          <span class="stat-label">Stores created</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">4 min</span>
+          <span class="stat-label">Average setup time</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">MENA-first</span>
+          <span class="stat-label">Arabic + English</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone mockup -->
+    <div class="hero-visual" id="hero-visual">
+      <div class="phone-float">
+        <img src="phone-mockup.png" alt="Zafaran storefront on mobile" class="phone-img" id="phone-mockup-img" />
+        <div class="phone-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TRUST BANNER
+  ============================ -->
+  <section class="trust-banner" id="trust-section">
+    <div class="trust-inner">
+      <p class="trust-label">Trusted by sellers across</p>
+      <div class="trust-flags">
+        <span class="flag-tag">🇸🇾 Syria</span>
+        <span class="flag-tag">🇸🇦 Saudi Arabia</span>
+        <span class="flag-tag">🇦🇪 UAE</span>
+        <span class="flag-tag">🇯🇴 Jordan</span>
+        <span class="flag-tag">🇱🇧 Lebanon</span>
+        <span class="flag-tag">🇪🇬 Egypt</span>
+        <span class="flag-tag">🌍 &amp; more</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       HOW IT WORKS
+  ============================ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">How it works</span>
+        <h2 class="section-title">From Instagram to storefront <em>in 4 minutes</em></h2>
+        <p class="section-sub">You sell. Zafaran does the heavy lifting. No tech skills needed.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card" id="step-1">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+          <h3>Connect your Instagram</h3>
+          <p>One tap. We read your posts, your price captions, your product photos — everything already on your page.</p>
+        </div>
+        <div class="step-card" id="step-2">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>AI builds your catalog</h3>
+          <p>Our AI identifies products, enhances images, extracts prices, and writes bilingual descriptions automatically.</p>
+        </div>
+        <div class="step-card" id="step-3">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Your store goes live</h3>
+          <p>A beautiful, mobile-ready storefront with your branding. Share the link — your customers can browse and order.</p>
+        </div>
+        <div class="step-card" id="step-4">
+          <div class="step-num">04</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.45 5.45l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>Manage orders with one tap</h3>
+          <p>Get order notifications, confirm with one tap, and re-share sold products back to your Instagram story.</p>
+        </div>
+      </div>
+
+      <!-- AI Process illustration -->
+      <div class="process-visual" id="process-visual">
+        <img src="ai-process.png" alt="AI process illustration" class="process-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FEATURES
+  ============================ -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Features</span>
+        <h2 class="section-title">Everything a seller needs. <em>Nothing they don't.</em></h2>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card feature-large" id="feat-ai-import">
+          <div class="feature-tag">✦ AI Import</div>
+          <h3>AI scans your posts and builds your catalog</h3>
+          <p>Zafaran reads up to 30 days of your Instagram posts, identifies product photos vs. lifestyle shots, and creates a clean product catalog — automatically.</p>
+          <div class="feature-visual feat-visual-grid">
+            <div class="mini-post"></div>
+            <div class="mini-post active"></div>
+            <div class="mini-post"></div>
+            <div class="mini-post active"></div>
+            <div class="mini-post"></div>
+            <div class="mini-post active"></div>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feat-image-enhance">
+          <div class="feature-tag">✦ Image AI</div>
+          <h3>Studio-quality images from phone shots</h3>
+          <p>AI removes backgrounds, boosts lighting, and turns casual shots into clean product photos — without a camera or editor.</p>
+          <div class="feature-visual image-enhance-demo">
+            <div class="before-after">
+              <div class="ba-half ba-before">Before</div>
+              <div class="ba-half ba-after">After ✦</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feat-descriptions">
+          <div class="feature-tag">✦ AI Writing</div>
+          <h3>Bilingual product descriptions in seconds</h3>
+          <p>Arabic and English descriptions, prices extracted from captions, and category tags — all written by AI, all editable by you.</p>
+          <div class="feature-visual desc-demo">
+            <div class="desc-line long"></div>
+            <div class="desc-line medium"></div>
+            <div class="desc-line short"></div>
+            <div class="desc-price-tag">AED 220 · ٢٢٠ درهم</div>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feat-orders">
+          <div class="feature-tag">✦ Orders</div>
+          <h3>Orders come in. You approve in one tap.</h3>
+          <p>No DM chaos. Customers order through your storefront, you get a clean notification, confirm with one tap, and re-share to your story.</p>
+          <div class="feature-visual order-demo">
+            <div class="order-notification">
+              <span class="order-icon">🛍️</span>
+              <div>
+                <strong>New order!</strong>
+                <span>فستان أميرة — AED 420</span>
+              </div>
+              <button class="order-confirm-btn">✓</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card feature-large feature-dark" id="feat-bilingual">
+          <div class="feature-tag light-tag">✦ Bilingual</div>
+          <h3>Arabic &amp; English — both first class</h3>
+          <p>Zafaran is built bilingual from day one. Your storefront speaks your customers' language — RTL Arabic and LTR English, always in sync.</p>
+          <div class="bilingual-demo">
+            <div class="lang-block lang-ar">
+              <span class="lang-dot"></span>
+              <span>متجرك جاهز بـ 4 دقائق</span>
+            </div>
+            <div class="lang-block lang-en">
+              <span class="lang-dot"></span>
+              <span>Your store, live in 4 minutes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feat-share">
+          <div class="feature-tag">✦ Share</div>
+          <h3>One link. Share anywhere.</h3>
+          <p>Your store gets a clean shareable link. Drop it in your Instagram bio, story, or WhatsApp — and it works everywhere.</p>
+          <div class="feature-visual share-demo">
+            <div class="share-link-box">zafaran.store/yourname</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SOCIAL PROOF / STORIES
+  ============================ -->
+  <section class="stories" id="stories">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Stories</span>
+        <h2 class="section-title">Sellers who made the <em>leap</em></h2>
+        <p class="section-sub">Real sellers. Real results. No tech background required.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card" id="testimonial-1">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #C8541E, #E8A33D);">S</div>
+            <div>
+              <strong>Salma M.</strong>
+              <span>@salma.fashion.sy — Damascus</span>
+            </div>
+          </div>
+          <p class="testimonial-text">"I was answering 80+ DMs a day. Now my customers order from my store link. I made more in the first week than the whole previous month."</p>
+          <div class="testimonial-stat">+340% orders in 30 days</div>
+        </div>
+
+        <div class="testimonial-card" id="testimonial-2">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #5B2D8E, #8B5CF6);">R</div>
+            <div>
+              <strong>Rima K.</strong>
+              <span>@rimajewelry — Beirut</span>
+            </div>
+          </div>
+          <p class="testimonial-text">"The AI wrote better product descriptions in Arabic than I could write myself. My store looked professional from day one. Setup took 3 minutes."</p>
+          <div class="testimonial-stat">3 min setup</div>
+        </div>
+
+        <div class="testimonial-card" id="testimonial-3">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #4FB89C, #2D8B75);">N</div>
+            <div>
+              <strong>Nour A.</strong>
+              <span>@nour.homemade — Riyadh</span>
+            </div>
+          </div>
+          <p class="testimonial-text">"I sell handmade food. I had no website, no technical knowledge. Zafaran gave me a real store from my Instagram in minutes. My sisters couldn't believe it."</p>
+          <div class="testimonial-stat">First sale in 2 hours</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PRICING
+  ============================ -->
+  <section class="pricing" id="pricing">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Pricing</span>
+        <h2 class="section-title">Start free. Grow when you're ready.</h2>
+        <p class="section-sub">No credit card required to get started. Upgrade any time.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card" id="plan-starter">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">
+            <span class="price-amount">$0</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <div class="plan-fee">+ 10% transaction fee</div>
+          <ul class="plan-features">
+            <li>✓ AI catalog import (up to 20 products)</li>
+            <li>✓ Shareable storefront link</li>
+            <li>✓ Basic order management</li>
+            <li>✓ Arabic &amp; English storefront</li>
+            <li class="plan-feat-muted">✗ Custom domain</li>
+            <li class="plan-feat-muted">✗ Advanced AI image enhancement</li>
+          </ul>
+          <a href="#" class="plan-cta-secondary" id="starter-cta">Get started free</a>
+        </div>
+
+        <div class="pricing-card pricing-card-featured" id="plan-growth">
+          <div class="plan-badge">Most popular</div>
+          <div class="plan-name">Growth</div>
+          <div class="plan-price">
+            <span class="price-amount">$19</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <div class="plan-fee">+ 3% transaction fee</div>
+          <ul class="plan-features">
+            <li>✓ Unlimited products</li>
+            <li>✓ AI image enhancement</li>
+            <li>✓ Bilingual AI descriptions</li>
+            <li>✓ Custom domain</li>
+            <li>✓ Order analytics dashboard</li>
+            <li>✓ Story re-share automation</li>
+          </ul>
+          <a href="#" class="plan-cta-primary" id="growth-cta">Start 30-day free trial</a>
+        </div>
+
+        <div class="pricing-card" id="plan-pro">
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">
+            <span class="price-amount">$59</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <div class="plan-fee">+ 1% transaction fee</div>
+          <ul class="plan-features">
+            <li>✓ Everything in Growth</li>
+            <li>✓ AI-powered ad creatives</li>
+            <li>✓ Multi-account support</li>
+            <li>✓ Priority support (Arabic)</li>
+            <li>✓ Inventory management</li>
+            <li>✓ Dedicated account manager</li>
+          </ul>
+          <a href="#" class="plan-cta-secondary" id="pro-cta">Contact sales</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FINAL CTA
+  ============================ -->
+  <section class="cta-section" id="cta-section">
+    <div class="cta-inner">
+      <div class="cta-orbs">
+        <div class="cta-orb cta-orb-1"></div>
+        <div class="cta-orb cta-orb-2"></div>
+      </div>
+      <h2 class="cta-headline">Your Instagram followers<br /><em>deserve a real store.</em></h2>
+      <p class="cta-sub">Join 18,000+ MENA sellers who turned their DMs into a real checkout experience.</p>
+      <div class="cta-input-wrap" id="cta-form">
+        <div class="cta-input-box">
+          <span class="input-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </span>
+          <input type="text" id="cta-input" class="cta-input" placeholder="Your Instagram username" autocomplete="off" />
+          <button class="hero-cta-btn" id="cta-submit-btn">
+            <span>Create my store</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+        <p class="input-hint" style="color: rgba(255,255,255,0.6);">Free forever · No credit card · Setup in 4 minutes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================ -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Zafaran" class="footer-logo" />
+          <p class="footer-tagline">Your Instagram, your store.<br />We handle the rest.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" id="footer-instagram-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn" id="footer-twitter-link" aria-label="Twitter/X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" id="footer-tiktok-link" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#how-it-works">How it works</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#">Changelog</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">Help center</a>
+            <a href="#">Contact us</a>
+            <a href="#">Arabic support</a>
+            <a href="#">Status</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of service</a>
+            <a href="#">Cookie settings</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Zafaran by Tradinos. All rights reserved.</p>
+        <div class="footer-langs">
+          <a href="#" class="lang-switch active" id="footer-lang-en">EN</a>
+          <a href="#" class="lang-switch" id="footer-lang-ar">عربي</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating sticky CTA bar -->
+  <div class="sticky-bar" id="sticky-bar">
+    <span>🛍️ Turn your Instagram into a store — free</span>
+    <a href="#cta-section" class="sticky-bar-btn" id="sticky-bar-cta">Start now →</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
